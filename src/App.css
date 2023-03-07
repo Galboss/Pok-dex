@@ -1,0 +1,412 @@
+:root {
+    /* Here I will define some css variables */
+    --bg-light: #FFF8F0;
+    --bg-dark: #242424;
+    --txt-dark: #FFF;
+    --txt-light: #000;
+    --background-color: var(--bg-light);
+    --text-color: var(--txt-light);
+    --primary-color: #011638;
+    --secondary-color: #9E2B25;
+    --emphasis-color: #4D6CFA;
+    --emphasis-secondary-color: #759AAB;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins-Italic.woff2') format('woff2'),
+        url('./assets/fonts/Poppins-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins-Bold.woff2') format('woff2'),
+        url('./assets/fonts/Poppins-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins-Regular.woff2') format('woff2'),
+        url('./assets/fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,
+body,
+#root,
+.App {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    transition: 0.4s ease;
+    background-color: var(--background-color);
+}
+
+main {
+    padding: 64px 0 0 0;
+}
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+    color: var(--text-color);
+}
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+}
+
+.vertical-centered-container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.h-gap-1 {
+    gap: 1vw;
+}
+
+.h-gap-2 {
+    gap: 2vw;
+}
+
+.h-gap-3 {
+    gap: 3vw;
+}
+
+.h-gap-4 {
+    gap: 4vw;
+}
+
+.h-gap-5 {
+    gap: 5vw;
+}
+
+.v-gap-1 {
+    gap: 1vh;
+}
+
+.v-gap-2 {
+    gap: 2vh;
+}
+
+.v-gap-3 {
+    gap: 3vh;
+}
+
+.v-gap-4 {
+    gap: 4vh;
+}
+
+.v-gap-5 {
+    gap: 5vh;
+}
+
+.jc-space-between {
+    justify-content: space-between;
+}
+
+.jc-space-around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-baseline {
+    align-items: baseline;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.di-row {
+    flex-direction: row;
+}
+
+.di-column {
+    flex-direction: column;
+}
+
+.f-grow-1 {
+    flex-basis: 350px;
+    flex-grow: 1;
+}
+
+.f-grow-2 {
+    flex-basis: 350px;
+    flex-grow: 2;
+}
+
+.f-grow-3 {
+    flex-basis: 350px;
+    flex-grow: 3;
+}
+
+.f-grow-4 {
+    flex-basis: 350px;
+    flex-grow: 4;
+}
+
+.f-grow-5 {
+    flex-basis: 350px;
+    flex-grow: 5;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.max-w-80 {
+    max-width: 80%;
+}
+
+.max-w-90 {
+    max-width: 90%;
+}
+
+.max-w-85 {
+    max-width: 85%;
+}
+
+.max-w-45 {
+    max-width: 45%;
+}
+
+.max-w-35 {
+    max-width: 35%;
+}
+
+.max-w-content-70 {
+    max-width: 70%;
+}
+
+.max-w-content-60 {
+    max-width: 60%;
+}
+
+.max-w-content-50 {
+    max-width: 50%;
+}
+
+.max-w-content-45 {
+    max-width: 45%;
+}
+
+.max-w-content-35 {
+    max-width: 35%;
+}
+
+.max-w {
+    max-width: 100%;
+}
+
+.max-h-content-100 {
+    max-height: 100%;
+}
+
+.m-l-5 {
+    margin: 0 0 0 5%;
+}
+
+.m-h-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p-h-5 {
+    padding: 0 5% 0 5%;
+}
+
+.p-5 {
+    padding: 5%;
+}
+
+.p-4 {
+    padding: 4%;
+}
+
+.p-3 {
+    padding: 3%;
+}
+
+.p-2 {
+    padding: 2%;
+}
+
+.p-1 {
+    padding: 1%;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.card-container {
+    border-radius: 45px;
+    box-shadow: 10px 10px 103px 29px rgba(0, 0, 0, 0.09);
+}
+
+h1 {
+    font-family: inherit;
+    font-size: 32pt;
+    font-weight: 600;
+    margin: 0;
+
+}
+
+h2 {
+    font-family: inherit;
+    font-size: 26pt;
+    font-weight: 600;
+    margin: 0;
+
+}
+
+h3 {
+    font-family: inherit;
+    font-size: 20pt;
+    font-weight: 600;
+    margin: 0;
+
+}
+
+h4 {
+    font-family: inherit;
+    font-size: 16pt;
+    font-weight: 600;
+    margin: 0;
+
+}
+
+p {
+    text-align: justify;
+    font-family: inherit;
+    font-size: 16pt;
+    margin: 0px;
+
+}
+
+.btn {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border-radius: 10px;
+    padding: 5px;
+    transition: 0.4s ease;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
+    border: 1px solid transparent;
+}
+
+
+.btn:hover {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
+.content-link {
+    color: var(--text-color);
+    transition: 0.4s ease;
+}
+
+.content-link:hover {
+    color: var(--emphasis-color)
+}
+
+.input-group {
+    font-size: 16pt;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.input-group span {
+    border-radius: 5px 0 0 5px;
+    border: 1px solid var(--text-color);
+    padding: 0 5px;
+}
+
+.input-group input {
+    font-size: inherit;
+    margin: 0;
+    height: 100%;
+    border-radius: 0 5px 5px 0;
+    outline: transparent;
+    border: 1px solid var(--text-color);
+    border-left: none;
+    padding: 3.4px 0 3.4px 10px;
+    background-color: transparent;
+    color: var(--text-color);
+    width: 100%;
+}
+
+hr {
+    width: 95%;
+    border: 0.5px solid var(--text-color);
+    margin: 20px auto;
+}
+
+.progress-bar-container {
+    margin: 10px auto;
+    overflow: hidden;
+    border: 1px solid var(--text-color);
+    border-radius: 15px;
+}
+
+.txt-color {
+    color: var(--text-color);
+}
+
+.progress-bar {
+    background-color: var(--text-color);
+    border-radius: 15px;
+    height: 20px;
+}
+
+@media (max-width:768px) {
+    .card-container {
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .row-container {
+        flex-wrap: wrap;
+        gap: 1vh;
+    }
+
+    .max-w-content-45 {
+        max-width: 100%;
+    }
+
+    .max-w-content-35 {
+        max-width: 100%;
+    }
+
+    p {
+        font-size: 12pt;
+    }
+}

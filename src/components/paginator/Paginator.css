@@ -1,0 +1,38 @@
+.paginator-container{
+    display: flex;
+    grid-template-columns: 1fr repeat(8,0.2fr) 1fr;
+    margin-top: 20px;
+    align-items: center;
+    gap:5px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.paginator-button{
+    font-family: inherit;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    min-height: 45px;
+    border-radius: 10px;
+    transition: 0.4s ease;
+}
+
+.paginator-page-button{
+    border-radius: 50%;
+    min-width: 45px;
+    border: 1px solid transparent;
+}
+
+.paginator-button.current-page{
+    background-color: var(--background-color); 
+    color: var(--text-color);
+    border-color: var(--text-color);
+}
+
+.paginator-controller{
+    width: 120px;
+}
+
+.paginator-button:disabled{
+    opacity: 0.5;
+}

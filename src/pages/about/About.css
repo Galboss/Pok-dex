@@ -1,0 +1,16 @@
+#Banner {
+    background: rgb(199, 207, 13);
+    background: linear-gradient(180deg, rgba(255, 205, 0, 1) 28%, #ffffff00 56%);
+    height: 85vh;
+    align-items: center;
+}
+
+#Banner img{
+    object-fit: contain;
+    height: 50%;
+    width: 85%;
+    filter: drop-shadow(18px 14px 13px #000000AA);
+}
+#Definitions{
+    margin-bottom: 5%;
+}

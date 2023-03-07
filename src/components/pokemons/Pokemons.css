@@ -1,0 +1,51 @@
+#MainCard{
+    border-radius: 10px;
+    /* box-shadow: 1px 3px 41px 0px rgba(0,0,0,0.15); */
+}
+
+#Result-container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 15px;
+}
+
+#Pokemons-article{
+    min-height: 500px;
+}
+
+@media (max-width:1510px) {
+    #Result-container{
+        grid-template-columns: repeat(5,1fr);
+    }
+}
+
+@media (max-width:1260px) {
+    #Result-container{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+@media (max-width:1010px) {
+    #Result-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+
+
+@media (max-width:768px){
+    #MainCard{
+        border-radius: 0px;
+        box-shadow: none
+    }
+    #Result-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:480px) {
+    #Result-container{
+        grid-template-columns: 1fr;
+    }
+}

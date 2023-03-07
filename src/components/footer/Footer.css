@@ -1,0 +1,32 @@
+footer{
+    position: sticky;
+    top: 100%;
+    background-color: black;
+    color: white;
+    border-top: 1px solid var(--text-color);
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer div{
+    color: white;
+    margin-top: 15px;
+}
+footer div span{
+    color: white;
+    max-width: 350px;
+}
+
+footer div h3{
+    color: white;
+}
+
+.footer-link{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link:hover{
+    color: yellow;
+}   
