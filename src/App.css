@@ -194,6 +194,10 @@ main {
     max-width: 35%;
 }
 
+.max-w-content-90 {
+    max-width: 90%;
+}
+
 .max-w-content-70 {
     max-width: 70%;
 }
@@ -320,7 +324,6 @@ p {
     border: 1px solid transparent;
 }
 
-
 .btn:hover {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -387,6 +390,90 @@ hr {
     height: 20px;
 }
 
+
+[type='electric'] {
+    background-color: yellow;
+}
+
+[type='water'] {
+    background-color: #008cff;
+}
+
+[type='ice'] {
+    background-color: #415aac;
+    color: white;
+}
+
+[type='grass'] {
+    background-color: lightgreen;
+}
+
+[type='fire'] {
+    background-color: #f3cf01;
+}
+
+[type='bug'] {
+    background-color: darkgreen;
+    color: white;
+}
+
+[type='fighting'] {
+    background-color: #990000;
+    color:white;
+}
+
+[type='flying'] {
+    background-color: #add8e6;
+}
+
+[type='psychic'] {
+    background-color: #dd9ee2;
+}
+
+[type='poison'] {
+    background-color: purple;
+    color:white;
+}
+
+[type='ground'] {
+    background-color: burlywood;
+}
+[type='rock']{
+    background-color: #646464;
+    color: white;
+}
+
+
+[type='fairy'] {
+    background-color: lightpink;
+}
+
+[type='normal'] {
+    background-color: lightgray;
+}
+
+[type='ghost'] {
+    background-color: rgb(71, 71, 71);
+    color: white;
+}
+
+[type='dragon'] {
+    background-color: #5141ac;
+    color: white;
+}
+
+[type='dark'] {
+    background-color: black;
+    color: white;
+}
+
+[type='steel']{
+    background-color: rgb(88, 88, 88);
+    color: white;
+}
+
+
+
 @media (max-width:768px) {
     .card-container {
         border-radius: 0;
@@ -403,6 +490,10 @@ hr {
     }
 
     .max-w-content-35 {
+        max-width: 100%;
+    }
+
+    .max-w-content-90 {
         max-width: 100%;
     }
 

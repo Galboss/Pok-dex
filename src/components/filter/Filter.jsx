@@ -33,7 +33,7 @@ function Filter() {
         return () => {
             abort.abort();
         }
-    }, [filterList])
+    }, [filterList]);
 
     useEffect(() => {
         if (isFilteringByType) {

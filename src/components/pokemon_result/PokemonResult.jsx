@@ -3,7 +3,9 @@ import './PokemonResult.css';
 import pokeballBackground from '../../assets/imgs/Pokeball_icon_water_v2.png';
 import pokemonPattern from '../../assets/imgs/pokemon_pattern_v2.png';
 import missingIMG from '../../assets/imgs/missingPokemonIMG.png';
+import { Link, useLocation } from 'react-router-dom';
 function PokemonResult(props) {
+    const location = useLocation();
     function capitalize(word) {
         let firstLetter = word.charAt(0);
         firstLetter = firstLetter.toUpperCase();
@@ -72,7 +74,9 @@ function PokemonResult(props) {
                         : ''}
                 </div>
                 <div className="pokemon-more">
-                    <a href="" className="btn-pokemon" type={getType(props.pokemon.types)}>See more...</a>
+                    <Link className="btn-pokemon" 
+                    to='/PokemonSelected' state={props.pokemon}
+                    type={getType(props.pokemon.types)}>See more...</Link>
                 </div>
             </div>
 
