@@ -41,7 +41,7 @@ function About() {
           <div>
             <h2>My Goal</h2>
             <p>
-              Demostrarte my abilities as a <strong>Front-End</strong> developer
+              Demonstrate my abilities as a <strong>Front-End</strong> developer
               using <strong>React</strong> to develop Web Applications of any kind. Manipulating data and showing to the user in a attractive way.
             </p>
           </div>

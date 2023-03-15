@@ -157,7 +157,6 @@ function Filter() {
     function removeDuplicates(data) {
         const uniquePokemon = [];
         const seenNames = new Set();
-        debugger;
         for (const pokemon of data) {
             if (!seenNames.has(pokemon.name)) {
                 uniquePokemon.push(pokemon);

@@ -401,7 +401,7 @@ hr {
 
 [type='ice'] {
     background-color: #415aac;
-    color: white;
+    color: white !important;
 }
 
 [type='grass'] {
@@ -414,12 +414,12 @@ hr {
 
 [type='bug'] {
     background-color: darkgreen;
-    color: white;
+    color: white !important;
 }
 
 [type='fighting'] {
     background-color: #990000;
-    color:white;
+    color:white !important;
 }
 
 [type='flying'] {
@@ -430,19 +430,20 @@ hr {
     background-color: #dd9ee2;
 }
 
+
 [type='poison'] {
     background-color: purple;
-    color:white;
+    color:white !important; 
 }
 
 [type='ground'] {
     background-color: burlywood;
 }
+
 [type='rock']{
     background-color: #646464;
-    color: white;
+    color: white !important;
 }
-
 
 [type='fairy'] {
     background-color: lightpink;
@@ -454,24 +455,35 @@ hr {
 
 [type='ghost'] {
     background-color: rgb(71, 71, 71);
-    color: white;
+    color: white !important;
 }
 
 [type='dragon'] {
     background-color: #5141ac;
-    color: white;
+    color: white !important;
 }
 
 [type='dark'] {
     background-color: black;
-    color: white;
+    color: white !important;
 }
 
 [type='steel']{
     background-color: rgb(88, 88, 88);
-    color: white;
+    color: white !important;
 }
 
+.btn-pokemon[type='ice']:hover,
+.btn-pokemon[type='bug']:hover,
+.btn-pokemon[type = 'fighting']:hover,
+.btn-pokemon[type='poison']:hover,
+.btn-pokemon[type='rock']:hover,
+.btn-pokemon[type='dragon']:hover,
+.btn-pokemon[type='dark']:hover,
+.btn-pokemon[type='ghost']:hover,
+.btn-pokemon[type='steel']:hover{
+    color: var(--text-color) !important;
+}
 
 
 @media (max-width:768px) {
@@ -501,3 +513,25 @@ hr {
         font-size: 12pt;
     }
 }
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #575757; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--text-color); 
+  }

@@ -29,6 +29,13 @@
     filter: drop-shadow(5px 5px 10px #000);
     width: 200px;
     height: 200px;
+    transition: 0.4s ease;
+}
+
+.image-container img:hover{
+    filter: none;
+    transform: scale(1.5) translateY(-20px);
+    filter: drop-shadow(5px 15px 14px #000);
 }
 
 #Pokemon-information{
@@ -40,14 +47,26 @@
     padding-bottom: 70px;
 }
 
-#Pokemon-information div{
-    color:var(--text-color);
+
+#Types{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    align-items: center;
+    margin-top: 15px;
+    gap: 20px;
+}
+
+#Types div{
+    padding: 5px 0;
+    border-radius: 15px;
+    font-size: 16pt;
 }
 
 .table-header{
     margin-top: 20px;
     background-color: var(--text-color);
     padding: 10px 0;
+    border-radius: 15px 15px 0 0;
 }
 
 .table-header p{
@@ -83,7 +102,103 @@
 }
 
 .ability{
-    border-bottom: 1px solid var(--text-color) ; 
+    /* border-bottom: 1px solid var(--text-color) ;  */
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.12);
+    padding: 20px;
+    transition: 0.4s ease;
+}
+
+.ability:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
+}
+
+#Movements{
+    margin-top: 15px;
+}
+
+#Movements-container{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    gap: 25px;
+}
+
+.type-container{
+    border-radius: 15px;
+}
+
+.movement{
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.12);
+    cursor: pointer;
+    display: grid;
+    align-items: center;
+    transition: 0.4s ease;
+}
+
+.movement-stats{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items:  center;
+    height: 0px;
+    opacity: 0;
+    transition: 0.4s ease;
+    position: relative;
+}
+.movement-stats p, .movement-stats h3{
+    
+    height: 0px;
+    transition: 0.4s ease;
+}
+
+.movement-description{
+    height: 0px;
+    opacity: 0;
+    transition: 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+.movement-description p, .movement-description h3{
+    height: 0px;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.movement:hover {
+    grid-row: 6 span;
+    transform: scale(1.02);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.20);
+}
+
+.movement:hover .movement-stats{
+    height: 120px;
+    opacity: 1;
+}
+
+.movement:hover .movement-description{
+    height: fit-content;
+    opacity: 1;
+}
+
+.movement:hover .movement-stats p, .movement:hover.movement-stats h3{
+    height: min-content;
+    opacity: 1;
+}
+
+.movement:hover .movement-description p, .movement:hover .movement-description h3{
+    height: min-content;
+    opacity: 1;
+}
+
+.component{
+    height: 600px;
+}
+
+.component .progress-bar-container{
+    padding: 300px 0;
 }
 
 @media (max-width:768px) {
