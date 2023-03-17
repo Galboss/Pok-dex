@@ -75,7 +75,7 @@ function PokemonResult(props) {
                 </div>
                 <div className="pokemon-more">
                     <Link className="btn-pokemon" 
-                    to='/PokemonSelected' state={props.pokemon}
+                    to='/Pokedex/PokemonSelected' state={props.pokemon}
                     type={getType(props.pokemon.types)}>See more...</Link>
                 </div>
             </div>

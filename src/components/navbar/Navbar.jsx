@@ -48,8 +48,8 @@ const Navbar = () => {
       </a>
       <div id="Nav-menu-container" ref={navMenuRef}>
         <ul className="nav-list">
-          <li><NavLink to="/" className="nav-link">Home</NavLink></li>
-          <li><NavLink to="/About" className="nav-link">About</NavLink></li>
+          <li><NavLink to="/Pokedex/" className="nav-link">Home</NavLink></li>
+          <li><NavLink to="/Pokedex/About" className="nav-link">About</NavLink></li>
         </ul>
       </div>
       <label className="nav-switch-toggler" >
